@@ -206,25 +206,38 @@
         </article>
     </main>
     <footer>
-        <form id="contact">
 
 
-            <h2>
-                Contact Us
-            </h2>
+        <h2>
+            Contact Us
+        </h2>
+        <p>
             Want to take your business to the next level? Get in touch with our elite team today.
+        </p>
+        <form id="contact" action="" method="get">
+            <label for="fname">
+                Full Name
+            </label>
+            <input type="text" name="fname" id="fname">
 
-            Full Name
+            <label for="email">
+                Email Address
+            </label>
+            <input type="email" name="email" id="email">
+            <label for="cname">
+                Company Name
+            </label>
+            <input type="text" name="cname" id="cname">
+            <label for="industry">
+                Industry
+            </label>
+            <textarea name="industry" id="industry"></textarea>
 
-            Email Address
-
-            Company Name
-
-            Industry
-
-            How can we help you?
-
-            Submit
+            <label for="help">
+                How can we help you?
+            </label>
+            <textarea name="help" id="help" rows="5" cols="33"></textarea>
+            <input type="submit" value="Submit">
         </form>
         <p>
             For educational purposes only.
