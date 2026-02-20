@@ -295,7 +295,19 @@ header {
     }
 }
 
-#navigation {
+#nav-h2:hover {
+    height: 1%;
+}
+
+#nav-h2:hover+#nav-list {
+    display: block;
+}
+
+#nav-list:hover {
+    display: block;
+}
+
+#nav-list {
     display: none;
     list-style: none;
 
