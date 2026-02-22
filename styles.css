@@ -580,11 +580,11 @@ address {
         label {
             display: none;
         }
-    }
 
-    #nav-list {
-        max-height: fit-content;
-        flex-direction: row;
+        #nav-list {
+            max-height: fit-content;
+            flex-direction: row;
+        }
     }
 
     #offerings {
@@ -603,6 +603,21 @@ address {
         }
     }
 
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr;
+    }
 
-    /* MEDIA QUERIES (LARGE) */
-    @media screen and (min-width: 1024px) {}
+    #results > section:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1/2;
+    }
+
+    #results > section:nth-child(2) {
+        grid-row: 2 / 3;
+    }
+}
+
+/* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {}
