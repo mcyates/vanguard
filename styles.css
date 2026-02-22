@@ -620,4 +620,37 @@ address {
 }
 
 /* MEDIA QUERIES (LARGE) */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 90vw;
+    }
+
+    #offerings {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.251fr 1fr 1fr;
+
+        margin-bottom: 3rem;
+
+        h2 {
+            grid-column: 1 / 4;
+        }
+
+    }
+
+    .results-table {
+        width: 100%;
+        text-align: center;
+        height: 90%;
+    }
+
+    .bar-chart {
+        padding: 0;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
